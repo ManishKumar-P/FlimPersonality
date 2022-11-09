@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+
+    <!-- css bootstrap -->
+  <a href="/form.html"></a>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jquery link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- external js link -->
+  <script type="text/javascript" src="external.js"></script>
+</head>
+
+<body>
+
+<!-- this is header information -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="stick">
+    <div class="container-fluid">
+
+
+      <a href="/" class="navbar-brand text-center">
+        <img class="thala"
+          src="data:image/jpeg;base64,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"
+          width="80" height="80" class="rounded-circle px-1 d-block" alt="\8d5436b1e4c0a1f0bf74679a81db91b9.jpg"
+          class="">
+        AJITH KUMAR </a>
+      <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#myNavBar">
+       <span class="navbar-toggler icon"></span> 
+      </button>
+    
+      <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="navbar-nav mc-auto">
+          <li class="nav-item">
+            <a class="nav-link text-light px-5 " href="#Home">
+              <h5>Home</h5>
+            </a>
+            <i class="fa fa-camera-retro fa-5x"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light px-5" href="#About">
+              <h5>About</h5>
+            </a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light px-5" href="#Career">
+              <h5>Career</h5>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light px-5" href="#Feedback">
+              <h5>Feedback</h5>
+            </a>
+
+          </li>
+          <li class="px-5"></li>
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle rounded-pill" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Join our community
+            </button>
+            <div class="dropdown-menu  aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item wts " href="https://web.whatsapp.com/">Whatsapp</a>
+              <i class="fa fa-whatsapp"></i>
+              <a class="dropdown-item fb " href="https://www.facebook.com/login/">FaceBook</a>
+              <a class="dropdown-item itg " href="https://www.instagram.com/?hl=en">Instagram</a>
+            </div>
+          </div>
+          </button>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- HOME -->
+
+  <section id="Home">
+    <h1 class="mt-5">THALA</h1>
+    <div class=" blockquote px-5">
+      <blockquote class="blockquote text-right">
+        <p class="mb-0 text-light ">EVERY MAN HAS PAST, EVERY DON HAS A HISTORTY</p>
+        <footer class="blockquote-footer text-light"> AJITH KUMAR</footer>
+      </blockquote>
+    </div>
+    <div class="input-group mt-4 ">
+      <input type="text" class="form-control rounded-pill" placeholder="email address">
+      <button type="button" class=" btn signin rounded-pill" onclick="myFunction()">welcome</button>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="About">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-12 p-lg-7 p-2 my-2 ">
+          <img src="https://wallpaperaccess.com/full/2418193.jpg" width="500px" height="400vh" alt="Ajithkumar">
+        </div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <h3>AJITH KUMAR
+            <hr>
+          </h3>
+          <p>
+            Ajith Kumar (born 1 May 1971) is an Indian actor who works predominantly in Tamil cinema. To date, he has
+            starred in over 60 films in Tamil. His awards include four Vijay Awards, three Cinema Express Awards, three
+            Filmfare Awards South and three Tamil Nadu State Film Awards. In addition to his acting, Kumar is also a
+            motor car racer and participated in the MRF Racing series (2010).<br>
+            Ajith became a race car driver, competing in circuits around India in places such as Mumbai, Chennai and
+            Delhi. He is one among very few Indians to race in the International arena and in Formula championships. He
+            has also been abroad for various races, including Germany and Malaysia. He drove in the 2003 Formula Asia
+            BMW Championships.
+          </p>
+
+
+        </div>
+      </div>
+  </section>
+
+  <!-- CAREER -->
+
+  <section id="Career">
+    <div class="container text-center m-5">
+      <h3 class="text-right my-2 ">
+        <blockquote>THE ACHIEVEMENTS <img class="logo"
+            src="https://thumbs.dreamstime.com/b/auto-style-car-logo-design-concept-sports-vehicle-silhouette-abstract-icon-light-grey-background-vector-illustration-86240291.jpg">
+          <!-- <footer>Ajithkumar</footer> -->
+        </blockquote>
+        <hr>
+
+      </h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-4  col-12 ">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/d2/58/88/d25888c1827b3bf59b99e3f4d9219873.jpg"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">ACTOR</h5>
+              <a href="#Actor" id="go" class="btn btn-primary rounded-pill">Touch Here</a>
+              <div>
+                <p id="p1">1990 En Veedu En Kanavar,
+                  1993 Amaravathi.
+                  Prema Pusthakam Sreekar Telugu film; credited as Sreeka.
+                  1994 Paasamalargal,Pavithra.
+                  1995 Rajavin Parvaiyile,Aasai Jeevanantham.
+                  1996 Vaanmathi,Kalloori Vaasal ,Minor Mappillai,Kadhal Kottai.
+                  1997 Nesam,Raasi,Ullaasam,Pagaivan,Rettai Jadai Vayasu.
+                  1998 Kaadhal Mannan,Aval Varuvala,Unnidathil Ennai Koduthen,Uyirodu Uyiraga.
+                  1999 Thodarum,Unnai Thedi,Vaalee,Anantha Poongatre,Amarkalam,Nee Varuvai Ena.
+                  2000 Mugavaree Sridhar,Kandukondain Kandukondain Manohar,Unnai Kodu Ennai Tharuven Surya.
+                  2001 Dheena, Citizen,Poovellam Un Vasam,Aśoka Susima Hindi film.
+                  2002 Red, Raja,Villain.
+                  2003 Ennai Thalatta Varuvala,Anjaneya.
+                  2004 Jana,Attahasam.
+                  2005 Ji.
+                  2006 Paramasivan,Thirupathi,Varalaru.
+                  2007 Aalwar,Kireedam,Billa.
+                  2008 Aegan.
+                  2010 Aasal.
+                  2011 Mankatha.
+                  2012 Billa II, English Vinglish.
+                  2013 Arrambam.
+                  2014 Veeram.
+                  2015 Yennai Arindhaal,Vedalam.
+                  2017 Vivegam.
+                  2019 Viswasam,Nerkonda Paarvai.
+                  2022 Valimai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card ">
+            <img
+              src="https://m.behindwoods.com/tamil-movies/slideshow/tamil-actors-with-other-job-skills/images/ajith-kumar.jpg"
+              height="450px" class="card-img-top ">
+            <div class="card-body text-center">
+              <h5 class="card-title">MECHANIC</h5>
+              <a href="#MECHANIC" id="go1" class="btn btn-primary rounded-pill">Touch Here</a>
+              <P id="p2">Before joining films, Tamil Supertar Ajith started his career as a mechanic. He worked as
+                part-time two-four wheeler mechanic and was a full-time garment exporter based in Erode till 1990. He
+                first made debut in a Telugu film called Prema Pustagam in 1992.</P>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img
+              src="https://1.bp.blogspot.com/_kLvzpyZm7zM/S3ZzzC-s5tI/AAAAAAAAEyU/YMa6CrhdE3A/s400/ajith-car-race-photos-05.jpg"
+              height="450px" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">CAR RACER</h5>
+              <a href="#CAR RACER" id="go2" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p3">Ajith became a racing driver, competing in circuits around India in places such as Mumbai,
+                Chennai and Delhi. He is one among very few Indians to race in the International arena and in Formula
+                championships. He has also been abroad for various races, including Germany and Malaysia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img
+              src="data:image/jpeg;base64,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"
+              height="450px" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">BIKE RACER</h5>
+              <a href="#BIKE RACER" id="go3" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p4">He drove in the 2003 Formula Asia BMW Championships. He raced in the 2010 Formula 2
+                Championship along with two other Indians, Armaan Ebrahim and Parthiva Sureshwaren.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/2f/42/1f/2f421f8c420a19e67d952aa5613a83d5.jpg" height="450px"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">PHOTOGRAPHER</h5>
+              <a href="#PHOTOGRAPHER" id="go4" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p5">Ajith is also a photographer. Interestingly, it was when cinematographer Aravindhan gifted him
+                a camera during the shooting of 'Dheena', photography became his hobby and then later a passion.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img src="https://i.pinimg.com/originals/62/31/22/623122b334b55e5d492fc7a45463db42.jpg" height="450px"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">CULINARY SKILLS</h5>
+              <a href="#CULINARY SKILLS" id="go5" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p6">Thala Ajith is a great cook who specializes in making chicken biryani.Director of the film
+                Venkat Prabhu had tweeted about the incident while speaking highly of Thala Ajith’s biryani.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img
+              src="http://www.behindwoods.com/tamil-movies-cinema-news-16/images/viral-video-of-thala-ajith-properly-landing-a-struggling-jet-watch-photos-pictures-stills.jpg"
+              height="450px" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">AERO MODELLER</h5>
+              <a href="#AERO MODELLER" id="go6" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p7"> Ajith loves aeromodelling and often practises at the flying club in Chennai. The star actor is
+                currently in Germany, to attend a conference with the MD of Vario Helicopter, Kirsten Zodtner.
+                This meeting is reported to be to enable the German government to prepare a requisition to the Indian
+                government for the recognition of aeromodelling in India.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img
+              src="https://feeds.abplive.com/onecms/images/uploaded-images/2021/07/18/a830b70b17b93b60f8300298fb4ca2be_original.jpg?impolicy=abp_cdn&imwidth=720"
+              height="450px" class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">HELICOPTER POILT TRAINER</h5>
+              <a href="#HELICOPTER POILT" id="go7" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p8"> Ajith was actively involved with MIT students for the project titled Dhaksha.<br>He was
+                frequently spotted at Chennai's MIT Campus in Chrompet working and guiding students in their work.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 ">
+          <div class="card">
+            <img
+              src="https://images.newindianexpress.com/uploads/user/imagelibrary/2019/8/2/w900X450/Thalajith.jpg?w=400&dpr=2.6"
+              class="card-img-top">
+            <div class="card-body text-center">
+              <h5 class="card-title">RIFLE SHOOTER</h5>
+              <a href="#RIFLE SHOOTER" id="go8" class="btn btn-primary rounded-pill">Touch Here</a>
+              <p id="p9">Thala Ajith has bagged as many as six medals, including four gold, while representing the
+                Chennai Rifle Club at the 46th Tamil Nadu State Shooting Championship which was recently held in the
+                city.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="Feedback">
+    <div class="container">
+      <div class=" manish card bg-primary ">
+        <h3 class="card-title">YOUR FEEDBACK COUNTS!
+          <hr>
+        </h3>
+        <p class=" text-center">Thank you very much trying out the our thala page.<br>we would realy like to know youe
+          opinion </p>
+        <div class="card-body text-center">
+
+          <form id="form">
+            <h4>Register Form</h4>
+          </form>
+
+
+          <form onsubmit="return validate()">
+            <div class="form-group">
+ <input type="text" class=" fullname form-control rounded-pill ml-5 mt-3" id="name" name="name"
+                placeholder="Enter your full name">
+              <p id="p1" class="text-danger"></p>
+            </div>
+
+            <div class="form-group">
+              <input type="number" class=" phone form-control rounded-pill ml-5 mt-3" name="phone" id="phone"
+                placeholder="Enter phone number">
+              <p id="ph"></p>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" class=" email form-control rounded-pill ml-5 mt-3" id="email"
+                placeholder="E-mail@.com">
+            </div>
+
+            <div class="form-group">
+              <input type="password" name="password" id="pass" class=" password form-control rounded-pill ml-5 mt-3 "
+                placeholder="Enter password">
+
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="submit" name="submit"
+                class=" submit btn btn-primary btn-block rounded-pill ml-5  mt-4 ">
+            </div>
+
+
+        </div>
+
+
+      </div>
+    </div>
+    </form>
+
+  
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

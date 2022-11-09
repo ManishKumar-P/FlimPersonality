@@ -1,0 +1,272 @@
+.navbar {
+    box-shadow: 5px 5px 5px 5px;
+    background-color: blue;
+
+}
+
+.navbar .navbar-brand {
+    font-size: 25px;
+    color: crimson;
+    font-weight: 600;
+
+}
+
+.thala:hover {
+    transform: perspective(500px) rotateY(-180deg);
+    transition: 2s;
+}
+
+.thala {
+    box-shadow: 1px 1px 1px 1px aqua;
+    border-radius: 25%;
+}
+
+#myNavBar a {
+    color: whitesmoke;
+
+}
+
+#myNavBar a:hover {
+    border-bottom: 2px solid aqua;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home {
+    background: linear-gradient(rgba(0, 0, 0, .20), rgba(0, 0, 0, .50)), url(https://m.media-amazon.com/images/M/MV5BYTE0ZTU0MjctM2FjMi00NGM2LTgyZDItNTE5NWZjZDVlM2U0XkEyXkFqcGdeQXVyMjA4NDU2MTY@._V1_.jpg);
+    background-size: cover;
+    background-position: top;
+    flex-direction: column;
+}
+
+#Home h1 {
+    font-size: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px whitesmoke,
+        0px 2px 0px whitesmoke,
+        0px 3px 0px whitesmoke,
+        0px 4px 0px whitesmoke,
+        0px 5px 0px whitesmoke,
+        0px 6px 0px whitesmoke,
+        0px 7px 0px whitesmoke;
+
+}
+
+.blockquote {
+    font-family: cursive;
+    text-align: center;
+}
+
+#Home .input-group {
+    width: 40%;
+    height: 45px;
+}
+
+.signin {
+    height: 39px;
+    background-color: blue;
+    color: whitesmoke;
+}
+
+#About {
+
+    background-color: #E6E6FA;
+    color: black;
+
+}
+
+#About h3 {
+    font-weight: 800;
+    font-size: 50px;
+
+}
+
+#About img {
+    border-radius: 50px;
+}
+
+#Career {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+        inset -4px -4px 10px whitesmoke;
+    background-color: #e5e5e5;
+}
+
+#Career img {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    background: #e5e5e5;
+    border: none;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+        inset 4px 4px 10px whitesmoke;
+
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+#Career.card :hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+        inset -4px -4px 10px whitesmoke;
+}
+
+#Career .logo {
+    width: 15x;
+    height: 15vh;
+    color: linear-gradient(red, yellow);
+}
+
+#Feedback {
+    background: url(https://igimages.gumlet.io/tamil/home/mahendran230720_4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    flex-direction: column-reverse;
+
+}
+
+.manish {
+    width: 400px;
+    height: 550px;
+}
+
+.email {
+    width: 300px;
+}
+
+.fullname {
+    width: 300px;
+
+}
+
+.phone {
+    width: 300px !important;
+}
+
+.password {
+    width: 300px;
+}
+
+.submit {
+    width: 300px !important;
+}
+
+#p1 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+
+}
+
+#p2 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p3 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p4 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p5 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p6 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p7 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p8 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+}
+
+#p9 {
+    display: none;
+    width: 200px;
+    height: 110px;
+    overflow-y: auto;
+
+}
+
+.wts {
+    color: green !important;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 2px solid green;
+}
+
+.fb {
+    color: blue !important;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 2px solid blue;
+}
+
+.itg {
+    color: red !important;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-bottom: 2px solid red;
+}
+
+.form-group input {
+    border: 2px solid red;
+}
+
+#stick {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    background: radial-gradient(rgb(15, 150, 228), black);
+}
